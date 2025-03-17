@@ -1,4 +1,4 @@
-namespace CaloriesWeb.Models
+namespace CaloriesCounter.Web.Models
 {
     public class ErrorViewModel
     {

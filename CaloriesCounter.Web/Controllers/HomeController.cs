@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CaloriesWeb.Models;
+using CaloriesCounter.Web.Models;
 
-namespace CaloriesWeb.Controllers;
+namespace CaloriesCounter.Web.Controllers;
 
 public class HomeController : Controller
 {
