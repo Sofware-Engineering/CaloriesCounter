@@ -1,0 +1,34 @@
+﻿@model List<CaloriesCounter.Entities.Product>
+
+<h2>Список продуктів та калорій</h2>
+
+<form asp-action="Add" method="post" class="mb-3">
+    <input name="Name" placeholder="Назва продукту" class="form-control mb-2" />
+    <input name="Calories" type="number" placeholder="Калорійність" class="form-control mb-2" />
+    <button type="submit" class="btn btn-success">Додати</button>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Калорійність</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Calories</td>
+                <td>
+                    <form asp-action="Delete" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@p.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Видалити</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
