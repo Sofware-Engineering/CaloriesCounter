@@ -1,6 +1,6 @@
 using CaloriesCounter.Web.Services;
 using Microsoft.AspNetCore.Identity;
-using CaloriesCounter.Web.Models;
+using CaloriesCounter.DAL;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 
