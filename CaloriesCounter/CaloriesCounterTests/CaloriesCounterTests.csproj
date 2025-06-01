@@ -21,6 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CaloriesCounter.BLL\CaloriesCounter.BLL.csproj" />
+    <ProjectReference Include="..\CaloriesCounter.Core\CaloriesCounter.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 

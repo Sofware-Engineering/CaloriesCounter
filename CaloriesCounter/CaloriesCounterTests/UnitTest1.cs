@@ -21,7 +21,7 @@ namespace CaloriesCounter.Tests.Services
             // Arrange
             var user = new UserProfile
             {
-                Id = Guid.NewGuid(),
+                Id = 1,
                 Age = 30,
                 Weight = 70, // kg
                 Height = 175, // cm
@@ -51,7 +51,7 @@ namespace CaloriesCounter.Tests.Services
             // Arrange
             var user = new UserProfile
             {
-                Id = Guid.NewGuid(),
+                Id =2,
                 Age = 25,
                 Weight = 60,
                 Height = 165,
